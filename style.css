@@ -1,0 +1,15 @@
+* {
+	margin: 5px;
+}
+
+form {
+	display: table;
+}
+
+form p {
+	display: table-row;
+}
+
+form p > * {
+	display: table-cell;
+}

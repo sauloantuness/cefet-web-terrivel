@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>web terrível</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="http://terrivel.herokuapp.com/monster" method="GET">
+		<fieldset>
+			<legend>Monster: </legend>
+			<p>
+				<label>Quantidade de pedras: </label>
+				<input type="number" name="num_pedras" min="0" required>
+			</p>
+			<p>
+				<label>Tamanho das pedras: </label>
+				<input type="number" name="tam_pedras" value="3" step="0.5" min="1" required>
+			</p>
+			<p>
+				<label>Nome: </label>
+				<input type="text" name="nome" pattern="[a-zA-Z]*" required>
+			</p>
+			<p>
+				<label>Cor 1: </label>
+				<input type="color" name="corCeu1">
+			</p>
+			<p>
+				<label>Cor 2: </label>
+				<input type="color" name="corCeu2">
+			</p>
+			<p>
+				<label>Tipo de Pedras:</label>
+				<select name="tipo_pedras" multiple>
+					<option value="marroada">Marroada</option>
+					<option value="ametista">Ametista</option>
+					<option value="topazio">Topazio</option>
+					<option value="espinela">Espinela</option>
+				</select>
+			</p>
+			<p>
+				<label >Pedras Sortidas: </label>
+				<span>
+					<label>
+						<input type="radio" name="tipo_pedras_sortidas" value="nao"> não
+					</label>
+					<label>
+						<input type="radio" name="tipo_pedras_sortidas" value="sim"> sim
+					</label>
+				</span>
+			</p>
+		</fieldset>
+		<p>
+			<button>OK</button>
+			<button type="reset">Cancel</button>
+		</p>
+	</form>
+</body>
+</html>
